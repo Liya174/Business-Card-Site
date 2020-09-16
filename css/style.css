@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    src: url('../fonts/Raleway-Regular.ttf');
+    font-family: 'Raleway Regular';
+}
+
+@font-face {
+    src: url('../fonts/CormorantInfant-Medium.ttf');
+    font-family: 'CormorantInfant Medium';
+}
+
+@font-face {
+    src: url('../fonts/CormorantInfant-SemiBoldItalic.ttf');
+    font-family: 'CormorantInfant SemiBoldItalic';
+}
+
+body {
+    margin: 0 0px;
+    font-size: 16px;
+    background: linear-gradient(rgb(211, 226, 240), rgb(245, 244, 226));
+}
+
+header, footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0px;
+    background-color: rgb(245, 244, 226);
+    background-image: url('../img/bgHF.jpg');
+    background-size: cover;
+    font-family: 'Raleway Medium', sans-serif;
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    color: black;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    box-shadow: 3px 3px 5px rgb(117, 117, 93);
+    background: rgb(252, 249, 241);
+}
+
+.navigation:hover {
+    background: rgb(211, 226, 240);
+    padding: 12px 20px;
+    font-size: 14px;
+}
+
+main {
+    margin: 0 auto;
+    width: 800px;
+    max-width: 80ch;
+    line-height: 1.5;
+    font-family: 'Raleway Regular', sans-serif;
+}
+
+.introduce {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col1, .col2 {
+    flex-basis: 50%;
+    max-width: 50%;
+    margin: 0;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.bigTitle {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'CormorantInfant SemiBoldItalic', serif;
+    color: rgb(3, 35, 75);
+}
+
+.intoduce-string2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.col3 {
+    flex-basis: 33%;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title {
+    font-size: 30px;
+    font-family: 'CormorantInfant Medium', serif;
+    padding: 5px 10px 0;
+    margin-top: 40px;
+}
+
+.titleNoMargin {
+    margin-top: 0;
+}
+
+.picture {
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    border: 1px solid rgb(245, 244, 226);;
+    box-shadow: 2px 2px 5px  rgb(3, 35, 75);
+    border-radius: 50%;
+}
+
+.text {
+    padding: 0 10px;
+    margin: 0 0 16px;
+}
+
+.contacts-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contacts-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.contacts-logo {
+    margin-right: 10px;
+}
+
+.contacts-name {
+    margin-right: 5px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        width: 90vw;
+    }
+
+    header, footer {
+        flex-wrap: wrap;
+    }
+
+    .introduce {
+        flex-direction: column;
+    }
+
+    .intoduce-string2 {
+        flex-direction: column;
+    }
+
+    .col1, .col2, .col3 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .image {
+        width: 50vw;
+    }
+}
